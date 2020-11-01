@@ -11,14 +11,14 @@ let package = Package(
         .library(name: "WalletConnect", targets: ["WalletConnect"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/krzyzanowskim/CryptoSwift", from: "1.1.0"),
+        
         .package(url: "https://github.com/mxcl/PromiseKit", from: "6.8.0"),
         
     ],
     targets: [
         .target(
             name: "WalletConnect",
-            dependencies: ["CryptoSwift", "PromiseKit", "Starscream"],
+            dependencies: ["CryptoSwift", "PromiseKit"],
             path: "WalletConnect"
         ),
     ]
